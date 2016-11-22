@@ -256,8 +256,10 @@ header {
 .modal-content {
 	border: 10px solid #3c763d;
 	border-radius: 0px;
-	// max-height: 500px;
-	// overflow: auto;
+	@include galaxy {
+		height: 100vh;
+		overflow: auto;
+	}
 }
 
 #particles-js {
@@ -302,6 +304,9 @@ header {
 			box-shadow: 0 5px 5px rgba(0, 0, 0, 0.075);
 			outline: 0 none;
 		}
+		@include ipad {
+			height: inherit;
+		}
 	}
 	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 		color: white;
@@ -326,6 +331,9 @@ header {
 	margin-top: 30px;
 	padding: 50px;
 	background: #3c763d;
+	@include ipad {
+		padding: 25px;
+	}
 }
 
 .triangle-shape {
