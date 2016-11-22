@@ -60,11 +60,11 @@ section {
 		padding: 50px 0;
 	}
 }
-.col-md-6, .col-md-12, .col-xs-12 {
-	@include ipad {
-		padding-bottom: 30px;
-	}
-}
+// .col-md-6, .col-md-12, .col-xs-12 {
+// 	@include ipad {
+// 		padding-bottom: 30px;
+// 	}
+// }
 /* END GLOBAL */
 
 nav {
@@ -79,7 +79,7 @@ nav {
 	color: white;
 	font-weight: bold;
 	@include ipad {
-		color: red;
+		color: #3c763d;
 	}
 }
 
@@ -88,7 +88,7 @@ nav {
 	font-weight: bold;
 }
 .navbar-default .nav > li.active > a, .navbar-default .nav > li.active > a:focus {
-	color: red !important;
+	color: #3c763d !important;
 }
 .navbar-default.affix .nav > li > a, .navbar-default.affix .nav > li > a:focus {
 	color: black;
@@ -98,10 +98,10 @@ nav {
 }
 
 .navbar-default.affix .navbar-header .navbar-brand {
-	color: red;
+	color: #3c763d;
 	font-weight: bold;
 	&:hover {
-		color: red;
+		color: #3c763d;
 	}
 }
 
@@ -119,7 +119,7 @@ nav {
 }
 
 header {
-	background: red;
+	background: #3c763d;
 	border-bottom: 10px solid white;
 }
 
@@ -132,7 +132,7 @@ header {
 		margin-bottom: 0px;
 	}
 	h3 {
-		color: red;
+		color: #3c763d;
 		font-weight: bold;
 		font-family: raleway;
 		margin-top: 1px;
@@ -167,7 +167,7 @@ header {
 	.about-bottom-p {
 		font-size: 40px;
 		line-height: 43px;
-		color: red;
+		color: #3c763d;
 		@include ipad {
 			font-size: 18px;
 			line-height: 28px;
@@ -176,7 +176,7 @@ header {
 }
 
 .full-row {
-	background: red;
+	background: #3c763d;
 	margin-left: -10px;
 	margin-right: -10px;
 	color: white;
@@ -196,7 +196,7 @@ header {
 	font-family: raleway;
 	padding: 0px;
 	&:hover {
-		color: red;
+		color: #3c763d;
 	}
 }
 
@@ -211,10 +211,14 @@ header {
 	font-style: italic;
 	margin-bottom: 3px;
 }
+.bio {
+	text-align: center;
+}
 
 .contact {
-	border: 10px solid red;
+	border: 10px solid #3c763d;
 	margin-bottom: 50px;
+	background-image: url("img/bg2.png");
 }
 
 .animateBounce {
@@ -245,7 +249,16 @@ header {
 	}
 }
 
+.modal-backdrop {
+   background-color: white;
+}
 
+.modal-content {
+	border: 10px solid #3c763d;
+	border-radius: 0px;
+	// max-height: 500px;
+	// overflow: auto;
+}
 
 #particles-js {
 	position: absolute;
@@ -257,9 +270,16 @@ header {
 	background-color: transparent !important;
 }
 
+.contact-textarea {
+	resize: none;
+	height: 200px !important;
+}
 
-
-
+.form-column {
+	@include laptop {
+		padding-bottom: 15px;
+	}
+}
 
 
 

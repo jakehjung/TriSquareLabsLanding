@@ -137,7 +137,7 @@
 
     <div class="full-row" id="projects">
         <div class="container">
-            <h2>OUR CURRENT PROJECTS</h2>
+            <h2>OUR WORK</h2>
         </div>
     </div>
 
@@ -171,28 +171,44 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-12">
-                    <img class="animateBounce" src="https://placehold.it/300x300" style="width:100%;">
+                    <img class="animateBounce" 
+                        data-toggle="modal" 
+                        data-target="#henry-modal" 
+                        src="img/henry.jpeg" 
+                        style="width:100%;">
                     <p class="bio-name">Henry Oh</p>
                     <p class="bio-title">Programmer</p>
-                    <p class="bio">I'm a programmer</p>
+                    <p class="bio">"I'm a programmer."</p>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
-                    <img class="animatePulse" src="https://placehold.it/300x300" style="width:100%;">
+                    <img class="animatePulse" 
+                        data-toggle="modal"
+                        data-target="#kouri-modal"
+                        src="img/kouri.jpeg" 
+                        style="width:100%;">
                     <p class="bio-name">Kouri Song</p>
                     <p class="bio-title">The Bro</p>
-                    <p class="bio">I'm a Bro</p>
+                    <p class="bio">"I'm a Bro."</p>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
-                    <img class="animateShake" src="https://placehold.it/300x300" style="width:100%;">
+                    <img class="animateShake" 
+                        data-toggle="modal"
+                        data-target="#jeff-modal"
+                        src="img/jeff.jpeg" 
+                        style="width:100%;">
                     <p class="bio-name">Jeff Yoo</p>
                     <p class="bio-title">The Brogrammer Hater</p>
-                    <p class="bio">I hate brogrammer</p>
+                    <p class="bio">"I hate brogrammers."</p>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
-                    <img class="animateBand" src="https://placehold.it/300x300" style="width:100%;">
+                    <img class="animateBand" 
+                        data-toggle="modal"
+                        data-target="#jake-modal"
+                        src="img/jake.jpeg"
+                        style="width:100%;">
                     <p class="bio-name">Jake Jung</p>
                     <p class="bio-title">The Brogrammer</p>
-                    <p class="bio">I'm a brogrammer</p>
+                    <p class="bio">"I'm a brogrammer."</p>
                 </div>
             </div>
         </div>
@@ -200,7 +216,7 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2>We <i class="fa fa-heart"></i> new friends!</h2>
+            <h2>LET'S DO THIS</h2>
             <ul class="list-inline list-social">
                 <li class="social-twitter">
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -212,8 +228,175 @@
                     <a href="#"><i class="fa fa-google-plus"></i></a>
                 </li>
             </ul>
+            <div class="col-md-8 col-md-offset-2" style="margin-top:30px;">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-md-6 form-column">
+                            <input type="text" class="form-control" placeholder="Name" required>
+                        </div>
+                        <div class="col-md-6 form-column">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" placeholder="Subject" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <textarea class="form-control contact-textarea" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-info" value="submit">
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
+
+    <!-- MODALS -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="joyit-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>One fine body&hellip;</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="png-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>One fine body&hellip;</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="henry-modal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Henry Oh</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="col-md-5">
+                            <img src="img/henry.jpeg" style="width:100%">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>Biography</h3>
+                            <p>LOL</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="kouri-modal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Kouri Song</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="col-md-5">
+                            <img src="img/kouri.jpeg" style="width:100%">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>Biography</h3>
+                            <p><i>Data-driven brand storyteller and content creator.</i></p>
+                            <p>Believes without contextual analysis, formative and evaluative data alone cannot uncover consumer insights that will result in truly break through products and services.</p>
+                            <p>"Integrating behavioral and social sciences to market data can make way for a powerful combination. Insights gleaned from these components can and should be supported by considering secondary and tertiary factors such as the current tide of public opinion and geographic data."</p>
+                            <p>Ten years of experience across the full scope of the marketing communications field including advertising, PR and journalism.</p>
+                            <p>Worked with products and services offered by B2B and B2C clients in the following industries: Telecommunications, Consumer Electronics, FnB, Finance, Legal, and Hospitality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="jeff-modal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Jeff Yoo</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="col-md-5">
+                            <img src="img/jeff.jpeg" style="width:100%">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>Biography</h3>
+                            <p>LOL</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="jake-modal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Jake Jung</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="col-md-5">
+                            <img src="img/jake.jpeg" style="width:100%">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>Biography</h3>
+                            <p>LOL</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
 
     <footer>
         <div class="container">
@@ -244,7 +427,7 @@
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
     <script>
-        particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":2,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+        particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":2,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":false,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
     </script>
 
 </body>

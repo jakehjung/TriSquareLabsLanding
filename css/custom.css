@@ -27,13 +27,6 @@ p {
   }
 }
 
-@media (max-width: 768px) {
-  /* line 63, ../sass/custom.scss */
-  .col-md-6, .col-md-12, .col-xs-12 {
-    padding-bottom: 30px;
-  }
-}
-
 /* END GLOBAL */
 /* line 70, ../sass/custom.scss */
 nav {
@@ -220,37 +213,54 @@ header {
   margin-bottom: 3px;
 }
 
-/* line 215, ../sass/custom.scss */
+/* line 214, ../sass/custom.scss */
+.bio {
+  text-align: center;
+}
+
+/* line 218, ../sass/custom.scss */
 .contact {
   border: 10px solid #3c763d;
   margin-bottom: 50px;
+  background-image: url("img/bg2.png");
 }
 
-/* line 221, ../sass/custom.scss */
+/* line 225, ../sass/custom.scss */
 .animateBounce:hover {
   -webkit-animation: bounce 1s infinite;
   animation: bounce 1s infinite;
 }
 
-/* line 228, ../sass/custom.scss */
+/* line 232, ../sass/custom.scss */
 .animatePulse:hover {
   -webkit-animation: pulse 1s infinite;
   animation: pulse 1s infinite;
 }
 
-/* line 235, ../sass/custom.scss */
+/* line 239, ../sass/custom.scss */
 .animateBand:hover {
   -webkit-animation: rubberBand 1s infinite;
   animation: rubberBand 1s infinite;
 }
 
-/* line 242, ../sass/custom.scss */
+/* line 246, ../sass/custom.scss */
 .animateShake:hover {
   -webkit-animation: shake 1s infinite;
   animation: shake 1s infinite;
 }
 
-/* line 250, ../sass/custom.scss */
+/* line 252, ../sass/custom.scss */
+.modal-backdrop {
+  background-color: white;
+}
+
+/* line 256, ../sass/custom.scss */
+.modal-content {
+  border: 10px solid #3c763d;
+  border-radius: 0px;
+}
+
+/* line 263, ../sass/custom.scss */
 #particles-js {
   position: absolute;
   top: 0;
@@ -259,4 +269,17 @@ header {
   left: 0;
   z-index: 1;
   background-color: transparent !important;
+}
+
+/* line 273, ../sass/custom.scss */
+.contact-textarea {
+  resize: none;
+  height: 200px !important;
+}
+
+@media (max-width: 991px) {
+  /* line 278, ../sass/custom.scss */
+  .form-column {
+    padding-bottom: 15px;
+  }
 }
