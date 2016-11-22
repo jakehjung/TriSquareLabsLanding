@@ -218,7 +218,7 @@ header {
 .contact {
 	border: 10px solid #3c763d;
 	margin-bottom: 50px;
-	background-image: url("img/bg2.png");
+	background-image: url(../img/bg2.png);
 }
 
 .animateBounce {
@@ -280,6 +280,69 @@ header {
 		padding-bottom: 15px;
 	}
 }
+
+.form-send {
+	font-size: 25px;
+	color: white;
+	&:hover {
+		color: black;
+	}
+}
+
+.ts-form {
+	input, textarea {
+		border: dashed 3px white;
+		border-radius: 0px;
+		background: transparent;
+		font-family: raleway;
+		height: 45px;
+		color: white;
+		&:focus {
+			border-color: black;
+			box-shadow: 0 5px 5px rgba(0, 0, 0, 0.075);
+			outline: 0 none;
+		}
+	}
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		color: white;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+		color: white;
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+		color: white;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+		color: white;
+	}
+}
+
+.form-h2 {
+	font-family: raleway;
+	font-weight: bold;
+}
+
+.contact-form-wrap {
+	margin-top: 30px;
+	padding: 50px;
+	background: #3c763d;
+}
+
+.triangle-shape {
+	.fa {
+		position: absolute;
+		top: 0;
+		font-size: 100px;
+		left: -30px;
+		color: #3c763d;
+	}
+	@include ipad {
+		display: none;
+	}
+}
+
+
+
 
 
 

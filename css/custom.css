@@ -222,7 +222,7 @@ header {
 .contact {
   border: 10px solid #3c763d;
   margin-bottom: 50px;
-  background-image: url("img/bg2.png");
+  background-image: url(../img/bg2.png);
 }
 
 /* line 225, ../sass/custom.scss */
@@ -281,5 +281,79 @@ header {
   /* line 278, ../sass/custom.scss */
   .form-column {
     padding-bottom: 15px;
+  }
+}
+
+/* line 284, ../sass/custom.scss */
+.form-send {
+  font-size: 25px;
+  color: white;
+}
+/* line 287, ../sass/custom.scss */
+.form-send:hover {
+  color: black;
+}
+
+/* line 293, ../sass/custom.scss */
+.ts-form input, .ts-form textarea {
+  border: dashed 3px white;
+  border-radius: 0px;
+  background: transparent;
+  font-family: raleway;
+  height: 45px;
+  color: white;
+}
+/* line 300, ../sass/custom.scss */
+.ts-form input:focus, .ts-form textarea:focus {
+  border-color: black;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.075);
+  outline: 0 none;
+}
+/* line 306, ../sass/custom.scss */
+.ts-form ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: white;
+}
+/* line 309, ../sass/custom.scss */
+.ts-form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+}
+/* line 312, ../sass/custom.scss */
+.ts-form :-ms-input-placeholder {
+  /* IE 10+ */
+  color: white;
+}
+/* line 315, ../sass/custom.scss */
+.ts-form :-moz-placeholder {
+  /* Firefox 18- */
+  color: white;
+}
+
+/* line 320, ../sass/custom.scss */
+.form-h2 {
+  font-family: raleway;
+  font-weight: bold;
+}
+
+/* line 325, ../sass/custom.scss */
+.contact-form-wrap {
+  margin-top: 30px;
+  padding: 50px;
+  background: #3c763d;
+}
+
+/* line 332, ../sass/custom.scss */
+.triangle-shape .fa {
+  position: absolute;
+  top: 0;
+  font-size: 100px;
+  left: -30px;
+  color: #3c763d;
+}
+@media (max-width: 768px) {
+  /* line 331, ../sass/custom.scss */
+  .triangle-shape {
+    display: none;
   }
 }
